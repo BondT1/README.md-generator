@@ -95,6 +95,26 @@ const questions = [
         name: 'contConfirm',
         message: 'Would you like to enable contributors to your project?'
     },
+    {
+        type: 'input', 
+        name: 'contributors',
+        message: 'Provide contributor guidelines.',
+        when: ({contConfirm}) => {
+            if (contConfirm) {
+                return true;
+            } else {
+                return false;
+            }
+        },
+        validate: contributors => {
+            if (contributors) {
+                return true;
+            } else {
+                console.log('Enter contributor guidelines.');
+                return false;
+            }  
+        }
+    }, 
     
 
 
