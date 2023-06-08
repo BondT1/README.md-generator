@@ -45,6 +45,33 @@ const questions = [
             }
         }
     },
+    {
+        type: 'input',
+        name: 'projectFeatures',
+        message: 'What features did you use to create your project? (e.g coding language/features)',
+        validate: features => {
+            if (features) {
+                return true;
+            } else {
+                console.log('Please enter the features used to create your project.');
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'installation',
+        message: 'Provide instructions on how to install your project.',
+        validate: installation => {
+            if (installation) {
+                return true;
+            } else {
+                console.log('You must provide instructions on how to install your project.');
+                return false;
+            }
+        }
+    },
+    
 
 
 
