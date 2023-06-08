@@ -46,7 +46,7 @@ function TOCLicense(license) {
 // Adds the contributor section if the user chooses to allow contributors
 function contributorsSec(contConfirm, data) {
   if (!contConfirm) {
-    return ''
+    return 'N/A'
   } else {
     return `${data}`;
   }
