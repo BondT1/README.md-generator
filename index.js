@@ -71,6 +71,19 @@ const questions = [
             }
         }
     },
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'Provide instructions and examples for use.',
+        validate: usage => {
+            if (usage) {
+                return true;
+            } else {
+                console.log('You must provide instructions and examples for use.');
+                return false;
+            }
+        }
+    },
     
 
 
