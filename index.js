@@ -128,6 +128,32 @@ const questions = [
             }
         }
     },
+    {
+        type: 'input',
+        name: 'githubUsername',
+        message: 'What is your Github username?',
+        validate: github => {
+            if(github) {
+                return true;
+            } else {
+                console.log('Please enter Github username.');
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'emailAddress',
+        message: 'What is your email address?',
+        validate: email => {
+            if(email) {
+                return true;
+            } else {
+                console.log('Please enter your email address.')
+                return false;
+            }
+        }
+    }
     
 
 
