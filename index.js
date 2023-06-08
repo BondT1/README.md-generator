@@ -175,4 +175,12 @@ function init() {
 }
 
 // Function call to initialize app
-init();
+init()
+    .then(rmData => {
+        return generateMarkdown(rmData);
+    })
+    .then(createReadme => writeToFile(createReadme))
+
+    .catch(err => {
+        console.log(err);
+});
