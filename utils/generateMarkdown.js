@@ -56,7 +56,53 @@ function contributorsSec(contConfirm, data) {
 function generateMarkdown(data) {
   return `# ${data.title}
 
+  ${renderLicenseBadge(data.license)}
+  
+ 
+  ## Table-of-Contents
+  * [Description](#description)
+  * [Installation](#installation)
+  * [Usage](#usage)
+${TOCLicense(data.license)}
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [Questions](#questions)
+  
+  ## Description
+
+  ${data.whatProject}
+
+  ${data.projectPurpose}
+
+  ${data.projectFeatures}
+ 
+  ## Installation
+
+  ${data.installation}
+ 
+  ## Usage
+
+  ${data.usage}
+
+  ${renderLicenseSection(data.license)}
+  
+  ## Contributing
+  
+  ${contributorsSec(data.contConfirm, data.contributors)}
+ 
+  ## Tests
+
+  ${data.tests}
+ 
+  ## Questions
+
+  Contact links:
+
+  Github - (https://github.com/${data.githubUsername})
+
+  Email - ${data.emailAddress}
+
 `;
-}
+};
 
 module.exports = generateMarkdown;
