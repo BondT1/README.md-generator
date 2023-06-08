@@ -84,6 +84,17 @@ const questions = [
             }
         }
     },
+    { 
+        type: 'list',
+        name: 'license',
+        message: 'Which license would you like to use for your project?',
+        choices: ['mit', 'apache', 'do not use license']
+    },
+    {
+        type: 'confirm',
+        name: 'contConfirm',
+        message: 'Would you like to enable contributors to your project?'
+    },
     
 
 
