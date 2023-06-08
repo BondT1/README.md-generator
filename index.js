@@ -115,6 +115,19 @@ const questions = [
             }  
         }
     }, 
+    {
+        type: 'input', 
+        name: 'tests', 
+        message: 'How can your project be tested? Provide instructions on how to run these tests.',
+        validate: test => {
+            if (test) {
+                return true;
+            } else {
+                console.log('Please provide some project test instructions.');
+                return false;
+            }
+        }
+    },
     
 
 
