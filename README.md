@@ -19,6 +19,7 @@ The features used within this project are:
 
 To install the program, download the files from the repository below.
 
+https://github.com/BondT1/README.md-generator
 
 Next, type 'npm install' in your command line once the files are open in VS Code.
 
@@ -28,6 +29,7 @@ Run the code 'node index.js' in your command line once you are within the correc
 
 Use the instructional video below for help. 
 
+https://drive.google.com/file/d/1MKD3_CrwmbHRpRMfdYGZitPFSVbnW3dj/view
 
 A screenshot of the generated README in the video is shown below.
 
