@@ -37,7 +37,7 @@ function renderLicenseSection(license) {
 function TOCLicense(license) {
   if (license !== 'do not use license') {
     return `
-  * [License](#license)`;
+  * [License](#License)`;
   } else {
     return '';
   }
