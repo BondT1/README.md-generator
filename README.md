@@ -33,7 +33,7 @@ https://drive.google.com/file/d/1MKD3_CrwmbHRpRMfdYGZitPFSVbnW3dj/view
 
 A screenshot of the generated README in the video is shown below.
 
-![screenshot of generated README file]
+![screenshot of generated README file](images/README.md-screencapture.png)
 
 ## Credits
 

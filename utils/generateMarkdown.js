@@ -25,7 +25,7 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license !== 'do not use license') {
     return `
-  ## license
+  ## License
 
   The license covering this project is ${renderLicenseLink(license)}`;
   } else {
@@ -37,7 +37,7 @@ function renderLicenseSection(license) {
 function TOCLicense(license) {
   if (license !== 'do not use license') {
     return `
-  * [License](#License)`;
+  * [License](#license)`;
   } else {
     return '';
   }
